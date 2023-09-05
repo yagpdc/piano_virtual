@@ -1,0 +1,66 @@
+.keyboard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.noteC, .noteD, .noteE, .noteF, .noteG, .noteA, .noteB {
+    background-color: #fff;
+    height: 15em;
+    color: #000;
+    border: 1px solid black;
+}
+
+.noteDb, .noteEb, .noteGb, .noteAb, .noteBb {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    height: 40%;
+    width: 8%;
+    font-size: 1em;
+    z-index: 1;
+    padding: 0;
+    border-radius: 0 0 20px 20px;
+    top: 0
+}
+
+.noteDb {
+    left: 10%;
+}
+
+.noteEb {
+    left: 25%;
+}
+.noteAb {
+    left: 52%;
+}
+.noteGb {
+    left: 67%;
+}
+.noteBb {
+    left: 82%;
+}
+
+@media (max-width: 430px) {
+      
+    .noteDb{
+        left: 6% !important;
+    }
+
+    .noteEb{
+        left: 22.5% !important;
+    }
+
+    .noteGb{
+        left: 53% !important;
+    }
+
+    .noteAb{
+        left: 70% !important;
+    }
+
+    .noteBb{
+        left: 86% !important;
+    }
+  }     
